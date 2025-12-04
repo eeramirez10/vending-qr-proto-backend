@@ -95,7 +95,7 @@ app.post(
       const amountCents = product.priceMxn * 100;
 
       const port = process.env.PORT || 4242;
-      const baseUrl = `http://localhost:${port}`;
+      const baseUrl = `https://vending-qr-proto-84357f6ae1e7.herokuapp.com`;
 
       const session = await stripe.checkout.sessions.create({
         mode: 'payment',
